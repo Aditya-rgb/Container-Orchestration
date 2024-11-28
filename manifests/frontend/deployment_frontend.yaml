@@ -1,1 +1,19 @@
-
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-front-end-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-frontend
+  template:
+    metadata:
+      labels:
+        app: my-frontend
+    spec:
+      containers:
+      - name: my-front-end-container
+        image: 1934111/kubernetes:capstone1  # Replace with your actual Docker image
+        ports:
+        - containerPort: 3000
