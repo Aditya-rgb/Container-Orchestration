@@ -1,1 +1,14 @@
-
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-front-end-service
+  labels:
+    app: my-frontend
+spec:
+  type: ClusterIP
+  selector:
+    app: my-frontend
+  ports:
+    - protocol: TCP
+      port: 3000         # Exposed port of the service
+      targetPort: 3000   # Port where your Flask application is running
