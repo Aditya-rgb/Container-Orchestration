@@ -1,1 +1,19 @@
-
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-back-end-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-backend
+  template:
+    metadata:
+      labels:
+        app: my-backend
+    spec:
+      containers:
+      - name: my-back-end-container
+        image: 1934111/kubernetes:capstone2-backend  # Replace with your actual Docker image
+        ports:
+        - containerPort: 3000
