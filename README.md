@@ -1,5 +1,6 @@
 # Container-Orchestration
 
+```bash
 /root (or your project root)
 │
 ├── frontend/                         # Directory for the frontend code
@@ -17,3 +18,4 @@
 │       └── templates/                # Helm templates for Kubernetes resources (e.g., Deployment, Service)
 │
 └── Jenkinsfile                       # The pipeline script (Groovy) for Jenkins
+```
