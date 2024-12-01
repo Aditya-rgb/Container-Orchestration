@@ -64,29 +64,48 @@ Before setting up the project, make sure the following are installed:
 - Jenkins
 - GitHub repository containing frontend and backend code
 
-## Setup and Installation
+## Setup Instructions
 
-### Setup Instructions
-1. EC2 Setup (Jenkins & Minikube)
+### 1. EC2 Setup (Jenkins & Minikube)
+
 Since both Jenkins and Minikube will run on the same EC2 instance, follow these steps to set up your environment:
 
-1.1. Install Jenkins
-Update system and install Java:
-```bash
-sudo apt update
-sudo apt install openjdk-11-jdk
-```
+#### 1.1. Install Jenkins
 
-Install Jenkins:
-```bash
+1. **Update system and install Java:**
 
-wget -q -O - https://pkg.jenkins.io/jenkins.io.key | sudo apt-key add -
-sudo sh -c 'echo deb http://pkg.jenkins.io/debian/ $(lsb_release -cs) main > /etc/apt/sources.list.d/jenkins.list'
-sudo apt update
-sudo apt install jenkins
+   ```bash
+   sudo apt update
+   sudo apt install openjdk-11-jdk
+   ```
+   
+2. **Install Jenkins:**
 
-Start Jenkins:
-```bash
-sudo systemctl start jenkins
-sudo systemctl enable jenkins
-```
+   ```bash
+   wget -q -O - https://pkg.jenkins.io/jenkins.io.key | sudo apt-key add -
+   sudo sh -c 'echo deb http://pkg.jenkins.io/debian/ $(lsb_release -cs) main > /etc/apt/sources.list.d/jenkins.list'
+   sudo apt update
+   sudo apt install jenkins
+   ```
+
+3. **Start Jenkins:**
+
+   ```bash
+   sudo systemctl start jenkins
+   sudo systemctl enable jenkins
+   ```
+
+4. **Access Jenkins UI:**
+
+   - **Navigate to Jenkins UI:**
+     - Open your browser and go to:  
+    `http://<your-ec2-public-ip>:8080`
+
+   - **Unlock Jenkins:**
+     - Retrieve the initial setup password by running the following command:  
+       ```bash
+       cat /var/lib/jenkins/secrets/initialAdminPassword
+       ```
+  - Copy the password and paste it into the Jenkins UI to unlock Jenkins and complete the setup.
+
+   
