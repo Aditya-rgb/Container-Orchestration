@@ -1,6 +1,4 @@
-# Container-Orchestration
-
-# CI/CD Pipeline for Frontend and Backend with Minikube and Jenkins
+# CI/CD Pipeline for Frontend and Backend with Minikube and Jenkins and Helm
 
 This repository is designed to automate the process of building Docker images for both frontend and backend codebases, pushing them to Docker Hub, and deploying the application to a Kubernetes cluster running on Minikube. The CI/CD pipeline is managed using Jenkins, which is configured to monitor changes in the GitHub repository, build Docker images, push them to Docker Hub, and deploy them to Minikube.
 
