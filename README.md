@@ -136,6 +136,20 @@ Since both Jenkins and Minikube will run on the same EC2 instance, follow these 
    ```bash
    kubectl get nodes
    ```
-  
+
+#### 1.3. Install Helm
+
+1. **Download Helm:**
+
+   ```bash
+   curl https://get.helm.sh/helm-v3.7.1-linux-amd64.tar.gz -o helm-v3.7.1-linux-amd64.tar.gz
+   tar -zxvf helm-v3.7.1-linux-amd64.tar.gz
+   sudo mv linux-amd64/helm /usr/local/bin/helm
+   ```
+2.  **Verify Helm installation:**
+
+    ```bash
+    helm version
+    ```
 
    
