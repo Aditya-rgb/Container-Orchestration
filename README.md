@@ -187,7 +187,29 @@ Whenever changes are pushed to GitHub, the Jenkins pipeline is triggered, which 
 - **Push Docker images:** Jenkins pushes the images to Docker Hub.
 - **Deploy to Minikube:** Helm is used to deploy the images to the Minikube Kubernetes cluster.
 
-### Conclusion
+### 5. Conclusion
 
 With the above setup, you’ve created an automated CI/CD pipeline that builds and deploys both the frontend and backend applications. Jenkins runs the pipeline, and Minikube ensures that your deployments are made to a local Kubernetes cluster. Docker Hub stores the images for both applications, while Helm charts are used for seamless deployment on Kubernetes.
+
+### 6. Contributing
+
+I welcome contributions! To contribute:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Commit your changes with clear messages.
+4. Submit a pull request for review.
+
+Make sure to follow the code style guidelines and include proper documentation for any new features.
+
+
+### 7. Contact
+
+For any queries, feel free to contact me:
+
+- **Email:** adityavakharia@gmail.com
+- **GitHub:** [Aditya-rgb](https://github.com/Aditya-rgb/Container-Orchestration)
+
+You can also open an issue in the repository for questions or suggestions.
+
 
