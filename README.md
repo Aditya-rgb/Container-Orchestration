@@ -152,4 +152,15 @@ Since both Jenkins and Minikube will run on the same EC2 instance, follow these 
     helm version
     ```
 
-   
+### 2. Docker Setup 
+
+Make sure Docker is installed on the EC2 instance where Jenkins and Minikube are running.
+
+#### 2.1. Install Docker
+
+```bash
+sudo apt-get update
+sudo apt-get install docker.io
+sudo systemctl start docker
+sudo systemctl enable docker
+```
