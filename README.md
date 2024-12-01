@@ -108,4 +108,34 @@ Since both Jenkins and Minikube will run on the same EC2 instance, follow these 
        ```
   - Copy the password and paste it into the Jenkins UI to unlock Jenkins and complete the setup.
 
+
+
+#### 1.2. Install Minikube
+
+1. **Install dependencies::**
+
+   ```bash
+   sudo apt-get install -y curl apt-transport-https virtualbox virtualbox-ext-pack
+   ```
+   
+2. **Install Minikube:**
+
+   ```bash
+   curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+   sudo install minikube-linux-amd64 /usr/local/bin/minikube
+   ```
+
+3. **Start Minikube:**
+
+   ```bash
+   minikube start
+   ```
+
+4. **Verify Minikube installation:**
+
+   ```bash
+   kubectl get nodes
+   ```
+  
+
    
