@@ -66,8 +66,27 @@ Before setting up the project, make sure the following are installed:
 
 ## Setup and Installation
 
-### Installing Docker
+### Setup Instructions
+1. EC2 Setup (Jenkins & Minikube)
+Since both Jenkins and Minikube will run on the same EC2 instance, follow these steps to set up your environment:
 
-1. **Update the Package List:**
-   ```bash
-   sudo apt-get update
+1.1. Install Jenkins
+Update system and install Java:
+```bash
+sudo apt update
+sudo apt install openjdk-11-jdk
+```
+
+Install Jenkins:
+```bash
+
+wget -q -O - https://pkg.jenkins.io/jenkins.io.key | sudo apt-key add -
+sudo sh -c 'echo deb http://pkg.jenkins.io/debian/ $(lsb_release -cs) main > /etc/apt/sources.list.d/jenkins.list'
+sudo apt update
+sudo apt install jenkins
+
+Start Jenkins:
+```bash
+sudo systemctl start jenkins
+sudo systemctl enable jenkins
+```
