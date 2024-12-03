@@ -156,6 +156,11 @@ Since both Jenkins and Minikube will run on the same EC2 instance, follow these 
 
 Make sure Docker is installed on the EC2 instance where Jenkins and Minikube are running.
 
+![Alt Text](/images/cap-docker-login-push.JPG)
+
+
+![Alt Text](/images/cap-docker-push-backend.JPG)
+
 #### 2.1. Install Docker
 
 ```bash
