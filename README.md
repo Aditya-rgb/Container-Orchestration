@@ -150,6 +150,8 @@ Since both Jenkins and Minikube will run on the same EC2 instance, follow these 
     helm version
     ```
 
+   ![Alt Text](/images/cap-helm-installation.JPG)
+
 ### 2. Docker Setup 
 
 Make sure Docker is installed on the EC2 instance where Jenkins and Minikube are running.
@@ -194,6 +196,8 @@ Whenever changes are pushed to GitHub, the Jenkins pipeline is triggered, which 
 ### 5. Conclusion
 
 With the above setup, you’ve created an automated CI/CD pipeline that builds and deploys both the frontend and backend applications. Jenkins runs the pipeline, and Minikube ensures that your deployments are made to a local Kubernetes cluster. Docker Hub stores the images for both applications, while Helm charts are used for seamless deployment on Kubernetes.
+
+![Alt Text](/images/cap-website.JPG)
 
 ### 6. Contributing
 
