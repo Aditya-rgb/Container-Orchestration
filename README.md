@@ -92,7 +92,7 @@ Since both Jenkins and Minikube will run on the same EC2 instance, follow these 
    sudo systemctl start jenkins
    sudo systemctl enable jenkins
    ```
-
+   ![Alt Text](/images/JK-8.JPG)
 4. **Access Jenkins UI:**
 
    - **Navigate to Jenkins UI:**
@@ -106,7 +106,9 @@ Since both Jenkins and Minikube will run on the same EC2 instance, follow these 
        ```
   - Copy the password and paste it into the Jenkins UI to unlock Jenkins and complete the setup.
 
+   ![Alt Text](/images/JK-1.JPG)
 
+   ![Alt Text](/images/JK-2.JPG)
 
 #### 1.2. Install Minikube
 
@@ -176,7 +178,10 @@ sudo systemctl enable docker
    - In Jenkins, create a new pipeline job and point it to the GitHub repository containing the `Jenkinsfile`.
    - Make sure Jenkins is configured with the necessary credentials (e.g., Docker Hub credentials).
 
-2. **Configure Jenkinsfile:**
+    ![Alt Text](/images/JK-7.JPG)
+
+   
+3. **Configure Jenkinsfile:**
    The `Jenkinsfile` in the repository automates the build, push, and deploy processes. Here's a breakdown of its steps:
    - **Checkout:** The pipeline checks out the code from the GitHub repository.
    - **Build Frontend Docker Image:** The frontend Docker image is built using the `Dockerfile` in the `frontend/` directory.
