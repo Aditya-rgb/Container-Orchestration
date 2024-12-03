@@ -162,7 +162,7 @@ sudo apt-get install docker.io
 sudo systemctl start docker
 sudo systemctl enable docker
 ```
- ![Alt Text](/images/images/cap-dockerhub.JPG)
+ ![Alt Text](/images/cap-dockerhub.JPG)
 ### 3. Configure Jenkins Pipeline
 
 1. **Create a Jenkins job:**
@@ -187,9 +187,9 @@ Whenever changes are pushed to GitHub, the Jenkins pipeline is triggered, which 
 - **Push Docker images:** Jenkins pushes the images to Docker Hub.
 - **Deploy to Minikube:** Helm is used to deploy the images to the Minikube Kubernetes cluster.
 
-   ![Alt Text](/images/images/images/cap-backend-pod-running.JPG)
+   ![Alt Text](/images/cap-backend-pod-running.JPG)
 
-   ![Alt Text](/images/images/images/images/images/cap-frontend-pod-running.JPG)
+   ![Alt Text](/images/cap-frontend-pod-running.JPG)
 
 ### 5. Conclusion
 
